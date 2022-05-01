@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <p class="n4">Gift card</p>
+        <div class="n5">
+            <div id="n1">
+                <div>
+                    <img src="LOGO3.png" width="350px" height="300px">
+
+                </div>
+                <div>
+                    <button class="n3">order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+        
+        let btn = document.getElementsByClassName("n3")
+        let btn_content = document.getElementsByClassName("n3")
+        let flag = false
+        btn.addEventListener("click", show)
+        btn_content.style.display = "none"
+        function show() {
+            if (flag) {
+                btn_content.style.display = "none"
+                flag = false
+            }
+            else {
+                btn_content.style.display = "block"
+                flag = true
+            }
+        }
+        let n1 = document.getElementsByClassName("n5")
+        let n2 = document.getElementsByClassName("n5")
+        for (let i = 0; i < n2.length; i++) {
+            n2[i].addEventListener("click", () => {
+                n1.checked = false
+            })
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+
+.n3:hover {
+    background-color: rgb(255, 185, 159);
+    color: black;
+    border-radius: 20px;
+    transition: 20px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+
+}
+.n3 {
+    display: flex;
+    padding: 10px 5px;
+    margin-left: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(247, 9, 9);
+    border: none;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+}
+.n5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 12px;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.n4 {
+    color: rgb(255, 145, 0);
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+}
+
